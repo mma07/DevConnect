@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevConnect — Developer Networking Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>DevConnect</h1>
+    <nav>
+      <a href="#feed">Feed</a>
+      <a href="#projects">Projects</a>
+      <a href="#chat">Chat</a>
+      <a href="#profile">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="feed">
+      <h2>Collaborator Feed</h2>
+      <div id="posts" class="grid"></div>
+    </section>
+
+    <section id="projects">
+      <h2>Project Boards</h2>
+      <div id="boards" class="boards"></div>
+    </section>
+
+    <section id="chat">
+      <h2>Realtime Chat (Mock)</h2>
+      <div id="messages" class="chat"></div>
+      <form id="chat-form">
+        <input id="chat-input" placeholder="Type a message..." />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="profile">
+      <h2>Your Profile</h2>
+      <form id="profile-form">
+        <input id="name" placeholder="Display name" />
+        <input id="skills" placeholder="Skills (comma separated)" />
+        <button>Save</button>
+      </form>
+      <div id="endorsements"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
